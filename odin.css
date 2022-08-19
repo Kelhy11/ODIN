@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Norse';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Norse Bold'), url('Norse-Bold.otf') format('opentype'),
+        url('Norse-Bold.otf') format('opentype');
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    min-height: 100vh;
+    font-family: tahoma;
+  }
+  .div-1 {
+    background-image: url("brian-breeding-J3lgM2rMOvs-unsplash.jpg"); /*your bg image*/
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .div-1 > header {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    column-gap: 2rem;
+    margin-top: 200px;
+  }
+  .div-1 > header > h1{
+    font-family: norse;
+    font-size: 100px;
+  }
+
+  .div-1 > header > img{
+    width: 80px /*use your preffered value*/
+  }
+.div-2{
+    background-color: grey;
+}
+
+  .div-2 > form > .grid {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    background-color: white;
+    padding: 32px;
+    row-gap: 16px;
+  }
+  .div-2 > form > .grid > div > label {
+    display:block;
+  }
+  .div-2 > form > .grid > input{
+    padding: 5px;
+    margin: 10px 0px;
+  }
+  .div-2 > .text{
+    padding: 32px;
+  }
+  .div-2 > form > .button{
+    padding: 32px;
+    text-align: center;
+  }
+  .div-2 > form > .button > input {
+    background-color:#596D48;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+.div-2 > .text > p  {
+  padding: 10px 0px;
+  display: block;
+}
